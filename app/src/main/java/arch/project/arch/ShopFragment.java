@@ -19,12 +19,12 @@ import java.util.List;
 public class ShopFragment extends Fragment {
 
     @Nullable
-    @Override
-    public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        super.onCreateView(inflater, container, savedInstanceState);
-        View view = inflater.inflate(arch.project.arch.R.layout.fragment_shop, null);
+@Override
+public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+    super.onCreateView(inflater, container, savedInstanceState);
+    View view = inflater.inflate(arch.project.arch.R.layout.fragment_shop, null);
 
-        return view;
-    }
+    return view;
+}
 
 }

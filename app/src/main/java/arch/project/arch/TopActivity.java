@@ -26,9 +26,9 @@ public class TopActivity extends AppCompatActivity
         //下のオプション
         BottomNavigationView navigationView = (BottomNavigationView) findViewById(R.id.bottom);
         navigationView.setOnNavigationItemSelectedListener(this);
-        navigationView.getMenu().findItem(arch.project.arch.R.id.nav_shop).setChecked(true);
+        navigationView.getMenu().findItem(arch.project.arch.R.id.nav_total).setChecked(true);
         //初期設定
-        fragmentTransaction(new ShopFragment());
+        fragmentTransaction(new TotalFragment());
 
         // headerに名前とprofを表示
         pref =getSharedPreferences("設定したもの", Context.MODE_PRIVATE);
@@ -41,12 +41,12 @@ public class TopActivity extends AppCompatActivity
 
     public boolean onNavigationItemSelected(MenuItem item) {
         switch (item.getItemId ()){
-            case  arch.project.arch.R.id.nav_shop:
+            case  arch.project.arch.R.id.nav_total:
                 //　遷移
-                fragmentTransaction(new ShopFragment());
+                fragmentTransaction(new TotalFragment());
                 return true;
-            case arch.project.arch.R.id.nav_pay:
-                fragmentTransaction(new PayFragment());
+            case arch.project.arch.R.id.nav_shop:
+                fragmentTransaction(new ShopFragment());
                 return true;
             case arch.project.arch.R.id.nav_company:
                 fragmentTransaction(new CompanyFragment());
