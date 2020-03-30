@@ -6,15 +6,19 @@ import android.os.Bundle;
 import android.support.design.widget.BottomNavigationView;
 import android.support.design.widget.NavigationView;
 import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.TextView;
 
 public class TopActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener, BottomNavigationView.OnNavigationItemSelectedListener{
 
     SharedPreferences pref;
+    SharedPreferences.Editor editor;
     TextView name;
     TextView prof;
 
@@ -30,8 +34,8 @@ public class TopActivity extends AppCompatActivity
         //初期設定
         fragmentTransaction(new TotalFragment());
 
-        // headerに名前とprofを表示
-        pref =getSharedPreferences("設定したもの", Context.MODE_PRIVATE);
+        pref =getSharedPreferences("count", Context.MODE_PRIVATE);
+        editor = pref.edit();
     }
 
         private void fragmentTransaction(Fragment fragment){
