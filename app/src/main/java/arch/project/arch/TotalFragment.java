@@ -52,26 +52,6 @@ public class TotalFragment extends Fragment {
 
         });
 
-        setting = view.findViewById(R.id.setting);
-        setting.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-
-                FragmentManager fragmentManager = getFragmentManager();
-                if(fragmentManager != null) {
-                    FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-
-                    // BackStackを設定
-                    fragmentTransaction.addToBackStack(null);
-
-                    fragmentTransaction.replace(R.id.container, new MyPageFragment());
-                    fragmentTransaction.commit();
-
-                }
-            }
-
-        });
-
         return view;
     }
 

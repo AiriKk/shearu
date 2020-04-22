@@ -11,60 +11,61 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.TextView;
+//import arch.project.arch.R;
 
 public class PayMenuFragment extends Fragment {
 
     Button check;
     TextView backed;
 
-//    @Nullable
-//    @Override
-//    public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-//        super.onCreateView(inflater, container, savedInstanceState);
-//        View view = inflater.inflate(arch.project.arch.R.layout.fragment_pay_menu, null);
-//
-//        check = view.findViewById(R.id.check);
-//        check.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//
-//                FragmentManager fragmentManager = getFragmentManager();
-//                if(fragmentManager != null) {
-//                    FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-//
-//                    // BackStackを設定
-//                    fragmentTransaction.addToBackStack(null);
-//
-//                    fragmentTransaction.replace(R.id.container, new PayShowFragment());
-//                    fragmentTransaction.commit();
-//
-//                }
-//            }
-//
-//        });
-//
-//        backed = view.findViewById(R.id.backed);
-//        backed.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//
-//                FragmentManager fragmentManager = getFragmentManager();
-//                if(fragmentManager != null) {
-//                    FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-//
-//                    // BackStackを設定
-//                    fragmentTransaction.addToBackStack(null);
-//
-//                    fragmentTransaction.replace(R.id.container, new ShopFragment());
-//                    fragmentTransaction.commit();
-//
-//                }
-//            }
-//
-//        });
-//
-//        return view;
-//    }
-//
+    @Nullable
+    @Override
+    public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+        super.onCreateView(inflater, container, savedInstanceState);
+        View view = inflater.inflate(arch.project.arch.R.layout.fragment_pay_m, null);
+
+        check = view.findViewById(R.id.check);
+        check.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                FragmentManager fragmentManager = getFragmentManager();
+                if(fragmentManager != null) {
+                    FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+
+                    // BackStackを設定
+                    fragmentTransaction.addToBackStack(null);
+
+                    fragmentTransaction.replace(R.id.container, new PayShowFragment());
+                    fragmentTransaction.commit();
+
+                }
+            }
+
+        });
+
+        backed = view.findViewById(R.id.backed);
+        backed.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                FragmentManager fragmentManager = getFragmentManager();
+                if(fragmentManager != null) {
+                    FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+
+                    // BackStackを設定
+                    fragmentTransaction.addToBackStack(null);
+
+                    fragmentTransaction.replace(R.id.container, new ShopFragment());
+                    fragmentTransaction.commit();
+
+                }
+            }
+
+        });
+
+        return view;
+    }
+
 
 }
