@@ -39,39 +39,51 @@ public class ShopitemFragment extends Fragment {
 
         final List<Shopitem> item_list = new ArrayList<>();
 
+        logo.setImageResource (R.drawable.mc);
+
 
 
         switch (shopname){
 
-            case "McDonalds":
+            case "McDon":
                 item_list.add(new Shopitem("Hamburger", 300));
                 item_list.add(new Shopitem("Nuggets", 400));
-
+                logo.setImageResource (R.drawable.mc);
                 break;
 
-            case "LAWSON":
+            case "LAWSO":
                 item_list.add(new Shopitem("Water", 100));
-
+                item_list.add(new Shopitem("Juice", 150));
+                logo.setImageResource (R.drawable.lw);
                 break;
 
-            case "SevenEleven":
+            case "SevenTwelve":
                 item_list.add(new Shopitem("Sandwich", 200));
-
+                item_list.add(new Shopitem("IceCream", 140));
+                item_list.add(new Shopitem("Salad", 250));
+                logo.setImageResource (R.drawable.sv);
                 break;
 
-            case "UNIQLO":
+            case "UNIzon":
                 item_list.add(new Shopitem("T-shirt", 1000));
-
+                item_list.add(new Shopitem("Coat", 2000));
+                item_list.add(new Shopitem("Gloves", 700));
+                item_list.add(new Shopitem("Cap", 700));
+                logo.setImageResource (R.drawable.uz);
                 break;
 
-            case "Daiso":
+            case "Daydream":
                 item_list.add(new Shopitem("Pencil", 100));
-
+                item_list.add(new Shopitem("Folder", 100));
+                item_list.add(new Shopitem("RubberBands", 100));
+                logo.setImageResource (R.drawable.da);
                 break;
 
-            case "FamilyMart":
+            case "FamilyMarch":
                 item_list.add(new Shopitem("Doughnut", 130));
-
+                item_list.add(new Shopitem("Water", 100));
+                item_list.add(new Shopitem("Gum", 100));
+                logo.setImageResource (R.drawable.fa);
                 break;
 
 

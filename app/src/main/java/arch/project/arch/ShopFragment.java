@@ -29,12 +29,12 @@ public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup c
 
 
         final List<Shop> shop_list = new ArrayList<Shop>();
-        shop_list.add(new Shop("McDonalds", android.R.color.holo_red_light));
-        shop_list.add(new Shop("LAWSON", android.R.color.holo_blue_dark));
-        shop_list.add(new Shop("SevenEleven", android.R.color.holo_green_dark));
-        shop_list.add(new Shop("UNIQLO", android.R.color.holo_red_dark));
-        shop_list.add(new Shop("Daiso", android.R.color.holo_purple));
-        shop_list.add(new Shop("FamilyMart", android.R.color.holo_blue_light));
+        shop_list.add(new Shop("McDon", android.R.color.holo_red_light));
+        shop_list.add(new Shop("LAWSO", android.R.color.holo_blue_dark));
+        shop_list.add(new Shop("SevenTwelve", android.R.color.holo_green_dark));
+        shop_list.add(new Shop("UNIzon", android.R.color.holo_red_dark));
+        shop_list.add(new Shop("Daydream", android.R.color.holo_purple));
+        shop_list.add(new Shop("FamilyMarch", android.R.color.holo_blue_light));
 
         ShopAdapter shopAdapter = new ShopAdapter(getContext(), R.layout.shop,shop_list);
 

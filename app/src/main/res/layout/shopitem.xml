@@ -4,15 +4,16 @@
         android:layout_height="50dp"
         android:orientation="horizontal">
 
-        <TextView
-            android:id="@+id/itemname"
-            android:layout_width="247dp"
-            android:layout_height="match_parent"
-            android:background="@color/colorAccent"
-            android:gravity="center"
-            android:minHeight="?android:attr/listPreferredItemHeightSmall"
-            android:text="itemname"
-            android:textSize="30sp" />
+    <TextView
+        android:id="@+id/itemname"
+        android:layout_width="247dp"
+        android:layout_height="match_parent"
+        android:background="#aaFF4A4F"
+        android:gravity="center"
+        android:minHeight="?android:attr/listPreferredItemHeightSmall"
+        android:text="itemname"
+        android:textColor="#ffffff"
+        android:textSize="30sp" />
 
         <TextView
             android:id="@+id/cost"

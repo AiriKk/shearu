@@ -59,6 +59,7 @@ public class PayMenuFragment extends Fragment {
                     fragmentTransaction.replace(R.id.container, new ShopFragment());
                     fragmentTransaction.commit();
 
+
                 }
             }
 
