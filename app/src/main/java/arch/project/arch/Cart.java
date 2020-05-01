@@ -17,7 +17,7 @@ public class Cart {
 
         for(int i=0;i<contents.size();i++){
 
-        total += contents.get(i).cost;
+        //total += contents.get(i).cost;
         }
 
         return total;

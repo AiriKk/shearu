@@ -22,7 +22,7 @@ public class PayMenuFragment extends Fragment {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         super.onCreateView(inflater, container, savedInstanceState);
-        View view = inflater.inflate(arch.project.arch.R.layout.fragment_pay_m, null);
+        View view = inflater.inflate(arch.project.arch.R.layout.fragment_pay_menu, null);
 
         check = view.findViewById(R.id.check);
         check.setOnClickListener(new View.OnClickListener() {
@@ -36,7 +36,7 @@ public class PayMenuFragment extends Fragment {
                     // BackStackを設定
                     fragmentTransaction.addToBackStack(null);
 
-                    fragmentTransaction.replace(R.id.container, new PayShowFragment());
+                    fragmentTransaction.replace(R.id.container, new PayDoneFragment());
                     fragmentTransaction.commit();
 
                 }
