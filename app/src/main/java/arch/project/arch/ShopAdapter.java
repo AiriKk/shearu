@@ -52,7 +52,6 @@ public class ShopAdapter extends ArrayAdapter<Shop> {
         if(item !=null){
             //set data
             viewHolder.shopname.setText(item.shopname);
-            viewHolder.shopname.setBackgroundColor(item.color);
         }
 
         return convertView;

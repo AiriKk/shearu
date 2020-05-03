@@ -23,4 +23,12 @@
             android:gravity="center"
             android:text="0"
             android:textSize="30sp" />
-    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="bottom"
+        android:text="Yen  "
+        android:textSize="24sp" />
+</LinearLayout>

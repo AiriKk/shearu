@@ -2,12 +2,10 @@ package arch.project.arch;
 
 public class Shop {
     public String shopname;
-    public int color;
 
-    public Shop(String shopname, int color){
+    public Shop(String shopname){
 
         this.shopname=shopname;
-        this.color=color;
 
     }
 }

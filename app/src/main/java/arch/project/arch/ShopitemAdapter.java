@@ -1,5 +1,6 @@
 package arch.project.arch;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.support.v4.content.ContextCompat;
 import android.view.LayoutInflater;
@@ -12,6 +13,7 @@ import android.widget.TextView;
 import java.util.List;
 
 public class ShopitemAdapter extends ArrayAdapter<Shopitem> {
+
 
     List<Shopitem> mItems;
 
@@ -32,6 +34,7 @@ public class ShopitemAdapter extends ArrayAdapter<Shopitem> {
     }
 
 
+    @SuppressLint("ResourceAsColor")
     @Override
     public View getView(final int position, View convertView, ViewGroup parent){
         final ViewHolder viewHolder;
@@ -55,22 +58,11 @@ public class ShopitemAdapter extends ArrayAdapter<Shopitem> {
             String Scost = String.valueOf(item.cost);
             viewHolder.cost.setText(Scost);
 
+//            if(item.isChosen == true) {
+//                viewHolder.itemname.setBackgroundColor(ContextCompat.getColor(getContext(), R.color.colorPrimaryDark));
+//                viewHolder.itemname.setTextColor(ContextCompat.getColor(getContext(), android.R.color.holo_green_dark));
+//            }
 
-            viewHolder.item.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View view) {
-            if(item.isChosen == true) {
-                viewHolder.itemname.setBackgroundColor(ContextCompat.getColor(getContext(), R.color.colorChosen));
-                viewHolder.itemname.setTextColor(ContextCompat.getColor(getContext(), android.R.color.white));
-                item.isChosen = false;
-            }
-            else{
-                viewHolder.itemname.setBackgroundColor(ContextCompat.getColor(getContext(), R.color.colorNotChosen));
-                viewHolder.itemname.setTextColor(ContextCompat.getColor(getContext(), android.R.color.darker_gray));
-                item.isChosen = true;
-            }
-                }
-            });
         }
 
         return convertView;

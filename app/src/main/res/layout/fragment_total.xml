@@ -21,7 +21,7 @@
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="120dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="32dp"
         android:layout_marginStart="32dp"
@@ -33,7 +33,7 @@
         app:layout_constraintTop_toBottomOf="@+id/help" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/tt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
@@ -58,6 +58,38 @@
         android:text="Yen"
         android:textColor="#000000"
         android:textSize="30sp"
-        app:layout_constraintBottom_toBottomOf="@+id/textView2"
-        app:layout_constraintStart_toEndOf="@+id/textView2" />
+        app:layout_constraintBottom_toBottomOf="@+id/tt"
+        app:layout_constraintStart_toEndOf="@+id/tt" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tt">
+
+        <TextView
+            android:id="@+id/donation"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="0"
+            android:textColor="#000000"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="76dp"
+            android:layout_marginRight="76dp"
+            android:gravity="center"
+            android:text="Yen donated"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+    </LinearLayout>
+
 </android.support.constraint.ConstraintLayout>

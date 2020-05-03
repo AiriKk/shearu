@@ -29,12 +29,12 @@ public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup c
 
 
         final List<Shop> shop_list = new ArrayList<Shop>();
-        shop_list.add(new Shop("McDon", android.R.color.holo_red_light));
-        shop_list.add(new Shop("LAWSO", android.R.color.holo_blue_dark));
-        shop_list.add(new Shop("SevenTwelve", android.R.color.holo_green_dark));
-        shop_list.add(new Shop("UNIzon", android.R.color.holo_red_dark));
-        shop_list.add(new Shop("Daydream", android.R.color.holo_purple));
-        shop_list.add(new Shop("FamilyMarch", android.R.color.holo_blue_light));
+        shop_list.add(new Shop("McDon"));
+        shop_list.add(new Shop("LAWSO"));
+        shop_list.add(new Shop("SevenTwelve"));
+        shop_list.add(new Shop("UNIzon"));
+        shop_list.add(new Shop("Daydream"));
+        shop_list.add(new Shop("FamilyMarch"));
 
         ShopAdapter shopAdapter = new ShopAdapter(getContext(), R.layout.shop,shop_list);
 
@@ -78,7 +78,7 @@ public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup c
                     FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
 
                     // BackStackを設定
-                    fragmentTransaction.addToBackStack(null);
+                    fragmentTransaction.addToBackStack("Hello");
 
                     ShopitemFragment payShow = new ShopitemFragment();
 
